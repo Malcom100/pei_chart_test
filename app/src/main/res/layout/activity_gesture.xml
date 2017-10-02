@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/allowed_back"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/navbar"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@color/bleu">
+            <com.example.aamirhasankhan.piecharttestapp1.Fragments.View.CustomButton
+                android:id="@+id/wheel"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/wheel"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:src="@drawable/fd_logo"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:textColor="@color/bleu"
+            android:text="@string/drive_safe"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:id="@+id/topl"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp">
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/bleu"/>
+            <TextView
+                android:id="@+id/altv"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textColor="@color/blueish"
+                android:text="@string/allowed_apps"
+                android:gravity="center"
+                android:background="@android:color/white"/>
+        </RelativeLayout>
+        <Gallery
+            android:id="@+id/gallery"
+            android:layout_below="@+id/topl"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:spacing="5dp"/>
+
+        <ImageView
+            android:id="@+id/center"
+            android:layout_centerInParent="true"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/bottoml"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/bleu"/>
+            <RadioGroup
+                android:id="@+id/RadioGroup01"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_column="0"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_span="3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <RadioButton
+                    android:id="@+id/radiobuttonpie1"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:background="@android:color/white"
+                    android:textSize="10sp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content">
+                </RadioButton>
+
+                <RadioButton android:id="@+id/radiobuttonpie2"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:freezesText="true"
+                    android:background="@android:color/white"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"></RadioButton>
+            </RadioGroup>
+        </RelativeLayout>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:textColor="@color/blueish"
+        android:text="@string/auto_reply"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/bottoml"
+         />
+    <com.example.aamirhasankhan.piecharttestapp1.Fragments.View.CustomButton
+            android:id="@+id/reply"
+            android:layout_below="@+id/bottoml"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:text="@string/on"
+
+            android:background="@drawable/ar"
+            android:paddingBottom="20dp"
+            android:paddingRight="5dp"/>
+
+    <com.example.aamirhasankhan.piecharttestapp1.Fragments.View.CustomButton
+            android:id="@+id/exit"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="@string/exit"
+            android:textColor="@color/blueish"
+            android:background="@drawable/validate"/>
+
+    </RelativeLayout>
+

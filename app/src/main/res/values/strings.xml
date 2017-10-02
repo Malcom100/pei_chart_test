@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FREEE DRIVE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="auto_reply">AUTO REPLY</string>
+    <string name="allowed_apps">ALLOWED APPS</string>
+    <string name="drive_safe">ENJOY SAFE DRIVING</string>
+    <string name="on">ON</string>
+    <string name="exit">EXIT</string>
+</resources>

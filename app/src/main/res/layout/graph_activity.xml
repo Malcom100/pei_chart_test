@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/allowed_back">
+
+
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/bleu">
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:src="@drawable/fd_logo"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:id="@+id/l1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Saftey Score"
+            android:id="@+id/textViewmysafteyscore"
+            android:textSize="10pt"
+            android:textColor="@color/blue"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l2"
+        android:orientation="vertical"
+        android:layout_below="@+id/l1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAST 7 DAYS"
+            android:id="@+id/textView"
+            android:textColor="@color/blue"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l3"
+        android:layout_below="@+id/l2"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|left">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/r1"
+        android:layout_below="@+id/l3">
+
+        <RadioGroup
+            android:id="@+id/RadioGroup01"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_column="0"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_span="3">
+
+            <RadioButton
+                android:id="@+id/radiobuttongraph1"
+                android:layout_height="wrap_content"
+                android:freezesText="true"
+                android:textSize="10sp"
+                android:layout_width="wrap_content">
+            </RadioButton>
+
+            <RadioButton android:id="@+id/radiobuttongraph2"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:checked="true"
+                android:layout_width="wrap_content"></RadioButton>
+        </RadioGroup>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r1"
+        android:id="@+id/l4"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|left"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewdrivingTime"
+            android:text="DRIVING TIME"
+            android:textColor="@color/blue"
+            android:textSize="10pt"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l5"
+        android:orientation="vertical"
+        android:layout_below="@+id/l4"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAST 7 DAYS"
+            android:id="@+id/textviewlastsevendays"
+            android:textColor="@color/blue"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l6"
+        android:layout_below="@+id/l5"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|left">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
